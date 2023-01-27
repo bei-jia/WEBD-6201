@@ -40,16 +40,23 @@
 function validateUserName() {
     console.log('in validateUserName');
     let userName = document.getElementById('usernameInput').value;
-    if (userName.length < 4 || userName.length > 20) {
+    let userNameError = document.getElementById('usernameError');
+    let usernameRegex = /^\S*$/;
 
-        document.getElementById('usernameError').innerHTML = 'Names should be between 4 and 20 characters long';
-        document.getElementById('usernameError').style.color = 'red';
-        return false;
+    if (userName.length < 5 || userName.length > 20) {
+
+        userNameError.innerHTML = 'Names should be between 5 and 20 characters long';
+        userNameError.style.color = 'red';
+
+    }
+    else if (!userName.match(usernameRegex)) {
+
+        userNameError.innerHTML = "Username cannot contain spaces";
+        userNameError.style.color = 'red';
+
     }
     else {
-        document.getElementById('usernameError').innerHTML = '';
-        return true;
-
+        userNameError.innerHTML = '';
     }
 
 }
