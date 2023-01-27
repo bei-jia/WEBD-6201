@@ -1,3 +1,9 @@
+/** 
+ * Student Name:  Bei Jia
+ * File:          formValidation.js
+ * Date:          January 27,2023
+ * Description:   validated the form as requested  
+ */
 //console.log("formValidation.js loaded");
 
 /**
@@ -26,15 +32,15 @@
 * @param {string} emailString
 * @returns {boolean}    validation result
 */
-// function ValidateEmailAddressRegex(emailString) {
-//     //the regular expression to validate the email address for string+string|number bewten 2-20 characters
-//     // note the / and / at the beginning and end of the expression
-//     let emailRegex = /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/;
+function ValidateEmailAddressRegex(emailString) {
+    //the regular expression to validate the email address for string+string|number bewten 2-20 characters
+    // note the / and / at the beginning and end of the expression
+    let emailRegex = /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/;
 
-//     //return true if the email address is valid - how to use regex
-//     return !!emailString && typeof emailString === 'string'
-//         && emailString.match(emailRegex);
-// }
+    //return true if the email address is valid - how to use regex
+    return !!emailString && typeof emailString === 'string'
+        && emailString.match(emailRegex);
+}
 
 // the function to verify that the user's name is valid
 function validateUserName() {
@@ -42,13 +48,14 @@ function validateUserName() {
     let userName = document.getElementById('usernameInput').value;
     let userNameError = document.getElementById('usernameError');
     let usernameRegex = /^\S*$/;
-
+    // If the entered user name is less than 5 or greater than 20, highlighted text in red is displayed indicating an error message
     if (userName.length < 5 || userName.length > 20) {
 
         userNameError.innerHTML = 'Names should be between 5 and 20 characters long';
         userNameError.style.color = 'red';
 
     }
+    // Use red highlighted text to indicate that there are no Spaces between user names
     else if (!userName.match(usernameRegex)) {
 
         userNameError.innerHTML = "Username cannot contain spaces";
@@ -64,6 +71,8 @@ function validateUserName() {
 // the function to clear the error messages
 function clearErrorMessages() {
     let errorMessage = document.getElementsByClassName('errorMessage');
+
+    // Clear error messages when click the reset button
     for (let i = 0; i < errorMessage.length; i++) {
         errorMessage[i].innerHTML = "";
         errorMessage[i].style.color = "";
