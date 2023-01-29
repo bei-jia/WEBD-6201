@@ -30,15 +30,20 @@ let submitButton = document.getElementById('submit-button');
 if (submitButton) {
     submitButton.addEventListener('click', timedRedirect, false);
 }
-// set an interesting background image for the home page
-let homeBody = document.getElementById('body');
 
+// set some welcome text for the home page
+let homeText = document.getElementById('homeText');
+//homeText.style.fontWeight = 'bold';
+if(homeText) {
+    homeText.style.fontSize = '20px';
+    homeText.innerHTML = 'Hello, my name is Jia Bei. Welcome to my website';    
+}
 
-homeBody.style.backgroundImage = 'url(./images/computer.png)';
-
-
-
-
+// set background image for the home page
+let homeBackground = document.getElementById('body');
+if(homeBackground) {
+    homeBackground.style.backgroundImage = './images/computer.png';
+}
 
 
 
