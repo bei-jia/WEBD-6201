@@ -30,6 +30,18 @@ let submitButton = document.getElementById('submit-button');
 if (submitButton) {
     submitButton.addEventListener('click', timedRedirect, false);
 }
+// set an interesting background image for the home page
+let homeBody = document.getElementById('body');
+
+
+homeBody.style.backgroundImage = 'url(./images/computer.png)';
+
+
+
+
+
+
+
 
 // Get the current year
 let currentYear = new Date().getFullYear();
