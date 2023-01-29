@@ -36,7 +36,11 @@ let homeText = document.getElementById('homeText');
 //homeText.style.fontWeight = 'bold';
 if(homeText) {
     homeText.style.fontSize = '20px';
-    homeText.innerHTML = 'Hello, my name is Jia Bei. Welcome to my website';    
+    homeText.style.fontWeight = 'bold';
+    homeText.style.color = '#003459';
+    
+
+    homeText.innerHTML = '<br />'+'Hello, my name is Jia Bei. Welcome to my website';    
 }
 
 // set background image for the home page
