@@ -1,72 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home</title>
-		<link
-			rel="stylesheet"
-			href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-		/>
-	</head>
-	<body>
-			<!-- Navigation bar section  -->
-		<ul class="nav justify-content-center" style="background-color:#e3f8fc; font-size:18px; ">
-			<li class="nav-item">
-				<a class="nav-link active" href="index.html"><i class="fa fa-home fa-fw"></i> Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="products" href="products.html"><i class="fa-brands fa-product-hunt"></i></i> Products</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="services.html"><i class="fa-solid fa-bell"></i> Services</a>
-			</li>
-			<li class="nav-item" >
-				<a class="nav-link  disabled" href="#"><i class="fa-solid fa-users"></i> About Us</a>
-			</li>
-			<li class="nav-item" id="contact">
-				<a class="nav-link" href="contact.html"><i class="fa-solid fa-phone-volume"></i> Contact</a>
-			</li>
-		</ul>
-		<ul>
 
-			<li id="painting">
-				<div>One of my hobbies is painting. It's a good way to reduce stress and improve concentration. 
-					I enjoy the pleasure of painting, and I am very happy to give them to my friends as birthday or holiday 
-					gifts, and they will happily hang my gifts on the wall or put them on the table. For example, a portrait 
-					I gave to a friend four years ago still hangs in her living room. But because of work and study I have little time to create new works now
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home</title>
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+</head>
 
-				</div>
-				<div><img src="images/painting.png" alt="my paintings" style="width: 50%;"></div>
-				
-			</li>
-			<li id="planting">
-				<p>At the same time, I like gardening very much, which also makes me feel relaxed and enjoy. 
-					And it's a great topic of conversation to have with my neighbors, we often exchange gardening 
-					tips and flower and vegetable seeds. During the harvest season,
-					I often give my vegetables and fruits to our neighbors, and friends.</p>
-				<img src="images/planting.png" alt="Planting and harvesting" >
+<body>
+	<!-- Navigation bar section  -->
+	<ul class="nav justify-content-center" style="background-color:#e3f8fc; font-size:18px; ">
+		<li class="nav-item">
+			<a class="nav-link active" href="index.html"><i class="fa fa-home fa-fw"></i> Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" id="products" href="products.html"><i class="fa-brands fa-product-hunt"></i></i>
+				Products</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="services.html"><i class="fa-solid fa-bell"></i> Services</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link  disabled" href="#"><i class="fa-solid fa-users"></i> About Us</a>
+		</li>
+		<li class="nav-item" id="contact">
+			<a class="nav-link" href="contact.html"><i class="fa-solid fa-phone-volume"></i> Contact</a>
+		</li>
+	</ul>
+	<br/>
+	<ul>
+		<li id="painting">
+			<div><img src="images/painting.png" alt="my paintings" style="width: 50%;"></div>
+		</li>
+		<li id="planting">
+			<img src="images/planting.png" alt="Planting and harvesting">
+		</li>
+		<li id="me">
+			<img src="images/my_photo.png" alt="My photo">
+		</li>
 
-			</li>
+	</ul>
 
-			<li id="me">
-				<p>This is me :)</p>
-				<img src="images/my_photo.png" alt="My photo">
+	<nav class="navbar fixed-bottom navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" id="copyright" href="#">Fixed bottom</a>
+		</div>
+	</nav>
+	<script src="./scripts/app.js"></script>
+</body>
 
-			</li>
-
-		</ul>
-
-		<nav class="navbar fixed-bottom navbar-light bg-light">
-			<div class="container-fluid">
-			  <a class="navbar-brand" id="copyright" href="#">Fixed bottom</a>
-			</div>
-		  </nav>
-		<script src="./scripts/app.js"></script>
-	</body>
 </html>
