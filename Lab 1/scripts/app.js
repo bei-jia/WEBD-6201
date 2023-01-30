@@ -14,10 +14,12 @@ console.log("JS script wired up");
  * @param {*} e 
  */
 function timedRedirect(e) {
-    let contactEmail = document.getElementById('exampleInputEmail1').value;
-    let contactPassword = document.getElementById('exampleInputPassword1').value;
+    let contactName = document.getElementById('usernameInput').value;
+    let contactEmail = document.getElementById('InputEmail1').value;
+    let contactPhone = document.getElementById('inputPhone5').value;
+    let contactMessage = document.getElementById('floatingTextarea2').value;
     //output the user’s information to the console
-    console.log("Email: " + contactEmail + " Password: " + contactPassword);
+    console.log("Name: "+ contactName+ " / Phone Number: "+ contactPhone+ " / Email: " + contactEmail + " / Message: " + contactMessage);
     e.preventDefault();
     //after 3 seconds, the user will be redirected to the home page
     setTimeout(function () {
@@ -40,14 +42,36 @@ if(homeText) {
     homeText.style.color = '#003459';
     
 
-    homeText.innerHTML = '<br />'+'Hello, my name is Jia Bei. Welcome to my website';    
+    homeText.innerHTML = '<br />'+'Hello, my name is Bei Jia, and I am a programmer. Welcome to my website!'+
+    '<br />'+' I share some of my favorite media in my Interests, and I will add more often.'+
+    '<br />'+' Or come to Services and see what I can offer you!';    
 }
 
 // set background image for the home page
 let homeBackground = document.getElementById('body');
 if(homeBackground) {
-    homeBackground.style.backgroundImage = './images/computer.png';
+    homeBackground.style.backgroundImage = 'url(images/computer.png)';
+
 }
+
+/**
+ * Injects all text parts of the products page
+ */
+
+
+
+
+
+/**
+ * Injects all text parts of the Servises.html page
+ */
+
+
+
+
+/**
+ * Injects all text parts of the about us page
+ */
 
 
 
