@@ -32,6 +32,8 @@ function hideElement(){
 function chainAnimations(){
     $('.red-box').fade(1000,.5);
     $('.green-box').delay(2000).fadeTo(1000,.5);
+
+    $('.blue-box').delay(2000).fadeTo(1000, 0.5).fadeTo(2000, 1.0).delay(1000).fadeOut();
 ;
 }
 
