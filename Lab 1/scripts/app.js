@@ -156,7 +156,7 @@ let aboutText2 = document.getElementById('planting');
 // create the tag p of the second about us  
 let aboutContent2=document.createElement('p');
 // create the text content of the second about us 
-let newAboutText2 = document.createTextNode('At the same time, I like gardening very much, which also makes me feel relaxed and enjoy. And it\'s a great topic of conversation to have with my neighbors, we often exchange gardening tips and flower and vegetable seeds. During the harvest season,I often give my vegetables and fruits to our neighbors, and friends.');
+let newAboutText2 = document.createTextNode('At the same time, I like gardening very much, which also makes me feel relaxed and enjoy. And it\'s a great topic of conversation to have with my neighbors, we often exchange gardening tips and flower and vegetable seeds. During the harvest season,I often give my vegetables and fruits to our neighbors, and friends, and my daughter\'s favorite activity is to enjoy cherry tomato picking with her friends.');
 aboutContent2.appendChild(newAboutText2);
 // insert the new element in the second li 
 if(aboutText2) {
@@ -193,6 +193,7 @@ let newItem = document.createElement('li');
 let ul = document.querySelector('ul');
 //Add content for the new element
 newItem.className = 'nav-item';
+
 newItem.innerHTML= '<a class="nav-link" href="#"><i class="fa-solid fa-handshake"></i> Human Resources</a>';
 // Insert the new element into ul
 ul.insertBefore(newItem, contact);
