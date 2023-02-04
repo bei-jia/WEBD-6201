@@ -3,7 +3,7 @@
  * Student Id Number: 100834162
  * File:          formValidation.js
  * Date:          January 27,2023
- * Description:   validated the form as requested  
+ * Description:   Complete the lab1 for WEBD 6201 
  */
 
 console.log("JS script wired up");
@@ -200,4 +200,4 @@ ul.insertBefore(newItem, contact);
 
 // change the Products link found in the Navbar above to Interests
 let products = document.querySelector('#products');
-products.innerHTML = '<i class="fa-brands fa-product-hunt"></i></i> Interests';
+products.innerHTML = '<i class="fa-brands fa-product-hunt"></i> Interests';
