@@ -105,50 +105,70 @@ $(function () {
 
 // FORM JQUERY
 // TO DO: import form validation functions with alias
+import * as formValidation from './form';
 
 // if the submit button is on the page
-// if ($("#btnRegSubmit")) {
+if ($("#btnRegSubmit")) {
     // TO DO: add a click function that calls a callack function
-    // $("#btnRegSubmit").click(function (e) {
+    $("#btnRegSubmit").click(function (e) {
         // prevent the default submit action (stay on the page)
-
+        e.preventDefault();
         // create a new user
         // you normally wouldn't do this unless you had validated, but we're going to do it to show how class memebers work in calling the validation
+        const unvalidated_user = new userClass.Uer(
 
             // get the first name input
-
+            $("#inputFirst").val(),
             // get the last name input
+            $("#inputLast").val(),
 
             // get the username input
+            $("#inputUsername").val(),
 
             // get the email input
+            $("#inputEmail").val(),
 
             // get the password input
+            $("#inputPassword").val()
 
-
-
+            );
+            console.log(`User details:${unvalidated_user.displayUsre()}`)
         // debug statement for object
         // console.log(`UserDetails: ${user.displayUser()}`)
-
+          
         // validate first name
-
+            $("#first-group").children(".errorMessages").html(formValidation.validateFirst(unvalidated_user.first_name));
+        
         // validate last name
-
+        $("#last-group").children(".errorMessages").html(formValidation.validateLast(unvalidated_user.last_name));
+        
         // validate  username
+        $("#username-group").children(".errorMessages").html(formValidation.validateUsername(unvalidated_user.username));
 
         // validate confirm password
+        let error=formValidation.validatePassword(unvalidated_user.password,$("inputPassword2").val());
+        
+        $("#pass1-group").children(".errorMessages").html(error);
+        $("#pass1-group").children(".errorMessages").html(error);
 
-// });
-// }
+
+ });
+ }
 
 // TO DO: if reset button present
+if($("#btnRegReset")){
+
 
     // bind a click event handler
+    $("#btnRegReset").click(function (e) {
 
         // clear out all error message paragraphs
+        $(".errorMessages p").html("<p></p>");
+
+    });
 
 
-
+};
 
 // SLIDESHOW
 // TO DO: if there's a gallery class on the page

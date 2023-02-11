@@ -34,7 +34,7 @@ export function validateLast(last) {
  */
 export function validateUsername(username) {
 if (username.length < 2) {
-        return "<p>You have entered a last name that is too short.</p>"
+        return "<p>You have entered a username that is too short.</p>"
     }
     else {
         return "<p></p>";
