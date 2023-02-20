@@ -1,7 +1,8 @@
 console.log('app.js loaded')
 // TO DO: load the user class script with alias
 
-
+// load the user class script with alias
+import * as userClass from "./user.js"
 
 /**
  * iffe to insert nav bar at the top of each page
@@ -105,7 +106,7 @@ $(function () {
 
 // FORM JQUERY
 // TO DO: import form validation functions with alias
-import * as formValidation from './form';
+import * as formValidation from './form.js';
 
 // if the submit button is on the page
 if ($("#btnRegSubmit")) {
@@ -115,7 +116,7 @@ if ($("#btnRegSubmit")) {
         e.preventDefault();
         // create a new user
         // you normally wouldn't do this unless you had validated, but we're going to do it to show how class memebers work in calling the validation
-        const unvalidated_user = new userClass.Uer(
+        const unvalidated_user = new userClass.User(
 
             // get the first name input
             $("#inputFirst").val(),
@@ -132,24 +133,24 @@ if ($("#btnRegSubmit")) {
             $("#inputPassword").val()
 
             );
-            console.log(`User details:${unvalidated_user.displayUsre()}`)
+            console.log(`User details:${unvalidated_user.displayUser()}`)
         // debug statement for object
         // console.log(`UserDetails: ${user.displayUser()}`)
           
         // validate first name
-            $("#first-group").children(".errorMessages").html(formValidation.validateFirst(unvalidated_user.first_name));
+        $("#first-group").children(".errorMessage").html(formValidation.validateFirst(unvalidated_user.firstName));
         
         // validate last name
-        $("#last-group").children(".errorMessages").html(formValidation.validateLast(unvalidated_user.last_name));
+        $("#last-group").children(".errorMessage").html(formValidation.validateLast(unvalidated_user.lastName));
         
         // validate  username
-        $("#username-group").children(".errorMessages").html(formValidation.validateUsername(unvalidated_user.username));
+        $("#username-group").children(".errorMessage").html(formValidation.validateUsername(unvalidated_user.username));
 
         // validate confirm password
         let error=formValidation.validatePassword(unvalidated_user.password,$("inputPassword2").val());
         
-        $("#pass1-group").children(".errorMessages").html(error);
-        $("#pass1-group").children(".errorMessages").html(error);
+        $("#pass1-group").children(".errorMessage").html(error);
+        $("#pass2-group").children(".errorMessage").html(error);
 
 
  });
@@ -163,7 +164,7 @@ if($("#btnRegReset")){
     $("#btnRegReset").click(function (e) {
 
         // clear out all error message paragraphs
-        $(".errorMessages p").html("<p></p>");
+        $(".errorMessage").html("<p></p>");
 
     });
 
