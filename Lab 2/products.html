@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Products</title>
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./style/style.css" />
+	</head>
+	<body>
+			<!-- Navigation bar section  -->
+		<ul class="nav justify-content-center" style="background-color:#e3f8fc; font-size:18px; ">
+			<li class="nav-item">
+				<a class="nav-link active" href="index.html"><i class="fa fa-home fa-fw"></i> Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" id="products" href="#"><i class="fa-brands fa-product-hunt"></i> Products</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="services.html"><i class="fa-solid fa-bell"></i> Services</a>
+			</li>
+			<li class="nav-item" >
+				<a class="nav-link" href="about.html"><i class="fa-solid fa-users"></i> About Us</a>
+			</li>
+			<li class="nav-item" id="contact">
+				<a class="nav-link" href="contact.html"><i class="fa-solid fa-phone-volume"></i> Contact</a>
+			</li>
+			<li class="nav-item" id="lognin">
+                <a class="nav-link" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Logout</a>
+            </li>
+            <li class="nav-item" id="register">
+                <a class="nav-link" href="register.html"><i class="fa-solid fa-registered"></i> Register</a>
+            </li>
+		</ul>
+
+		<div id="productText">
+			<h2 align="center">Something interesting!!</h2>
+			<h4 align="center">Here are some of my favorite movies and music. 
+				I will often update my favourite pieces of media on this page, 
+				welcome to visit here to see my updates.</h4>
+			<br/>
+			<br/>
+
+			<div id="product-jibaro">
+				
+				<a id="jibaro-link" href="https://www.google.com/search?q=love+death+robots+3+jibaro&client=firefox-b-d&biw=1536&bih=711&tbm=vid&ei=fJbWY7-eJfWjqtsPtpWfuAY&oq=Love%2CDeath+Robots+3+&gs_lcp=Cg1nd3Mtd2l6LXZpZGVvEAEYBzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIHCAAQgAQQEzIGCAAQHhATMgkIABAeEPEEEBMyBggAEB4QEzIGCAAQHhATMgYIABAeEBMyBggAEB4QEzoFCAAQgAQ6CQgAEB4QDRDxBDoGCAAQHhANUJAIWJAIYM0yaABwAHgAgAFGiAGGAZIBATKYAQCgAQHAAQE&sclient=gws-wiz-video#fpstate=ive&vld=cid:a8d9ae05,vid:MB89VIi3PlY">
+					<img src="images/Jibaro.png" style="width: 30%;" alt="Jibaro"> Jibaro</a>
+
+			</div>
+			
+			<br/>
+			<br/>
+			<div id="product-king">
+			
+				<a href="https://www.youtube.com/watch?v=oica5jG7FpU&t=5s">
+					<img src="images/BB_KING.png" style="width: 30%;" alt="Jibaro"> B.B. King </a>
+				
+			</div>
+			<br/>
+			<br/>
+			<div id="product-pipa">
+				
+				<a href="https://www.google.com/search?q=%E7%90%B5%E7%90%B6%E8%AF%AD&client=firefox-b-d&source=lnms&tbm=vid&sa=X&ved=2ahUKEwi_wdLpme38AhXzmGoFHeMyDOQQ_AUoAnoECAEQBA&biw=1536&bih=711&dpr=1.25#fpstate=ive&vld=cid:5dad484b,vid:7IA7nYpnfl4">
+					<img src="images/pipa.png" style="width: 30%;" alt="Jibaro"> Pipa language</a>
+			</div>
+		</div>
+
+		<nav class="navbar fixed-bottom navbar-light bg-light">
+			<div class="container-fluid">
+			  <a class="navbar-brand" id="copyright" href="#">Fixed bottom</a>
+			</div>
+		  </nav>
+		<script src="./scripts/app.js"></script>
+	</body>
+</html>

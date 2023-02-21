@@ -1,0 +1,31 @@
+.title{
+    font-size: 2em;
+	font-weight: bold;
+}
+
+.login-form {
+    width  : 600px;
+    height : 600px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+#inputFirstName,#inputLastName,#inputEmail,#inputPassword,#inputPassword2,
+#log-username,#log-pass {
+    margin-bottom: 5%;
+
+}
+
+.box {
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    margin: 0 auto;
+
+  }

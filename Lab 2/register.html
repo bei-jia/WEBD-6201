@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://code.jquery.com/jquery-3.6.3.min.js"
+			integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+			crossorigin="anonymous"
+		></script>
+
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+		<link rel="stylesheet" href="./style/style.css" />
+		<title>Register</title>
+	</head>
+	<body>
+        <ul class="nav justify-content-center" style="background-color:#e3f8fc; font-size:18px; " >
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fa fa-home fa-fw"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="products" href="products.html"><i class="fa-brands fa-product-hunt"></i> Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html"><i class="fa-solid fa-bell"></i> Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fa-solid fa-users"></i> About Us</a>
+            </li>
+            <li class="nav-item" id="contact">
+                <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone-volume"></i> Contact</a>
+            </li>
+            <li class="nav-item" id="lognin">
+                <a class="nav-link" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login/Logout</a>
+            </li>
+            <li class="nav-item" id="register">
+                <a class="nav-link" href="register.html"><i class="fa-solid fa-registered"></i> Register</a>
+            </li>
+        </ul>
+
+		<div class="box">	
+        <div class="title">Register</div>
+		<p>Create your own account. It's free and only takes a minute.</p>
+
+
+		<form id="login-form">
+			<!-- form group for first name entry -->
+				<div class="form-group col-md-6">
+					<input 
+						type="text" 
+						class="form-control" 
+						id="inputFirstName"
+						placeholder="First name"
+						required
+					/>
+					<div class="errorMessage"></div>
+				</div>
+				<!-- form group for last name entry -->
+				<div class="form-group col-md-6">
+					<input 
+						type="text" 
+						class="form-control" 
+						id="inputLastName"
+						placeholder="Last name"
+						required
+					/>
+					<div class="errorMessage"></div>
+				</div>
+				
+			  <!-- form group for email  entry -->
+			  <div class="form-group col-md-6" id="email-group">
+				<input
+					type="email"
+					class="form-control"
+					id="inputEmail"
+					placeholder="Email"
+					required
+				/>
+				<div class="errorMessage"></div>
+			</div>
+				<!-- form group for password 1 entry -->
+			<div class="form-group col-md-6" id="pass1-group">
+				<input
+					type="password"
+					class="form-control"
+					id="inputPassword"
+					placeholder="Password"
+					required
+				/>
+				<div class="errorMessage"></div>
+			</div>
+				<!-- form group for password 2 entry -->
+			<div class="form-group col-md-6" id="pass2-group">
+				<input
+					type="password"
+					class="form-control"
+					id="inputPassword2"
+					placeholder="Confirm Password"
+					required
+				/>
+				<div class="errorMessage"></div>
+			</div>
+
+			<!-- submit button -->
+			<button type="submit" class="btn btn-primary" id="btnRegister">
+				Register
+			</button>
+		</form>
+	</div>
+		<nav class="navbar fixed-bottom navbar-light bg-light" style="background-color:#caf0f8">
+			<div class="container-fluid" style="background-color:#e4f0f9">
+				<a class="navbar-brand" id="copyright" href="#">Fixed bottom</a>
+			</div>
+		</nav>
+		<!-- import scripts as modules  -->
+		<script type="module" src="./scripts/app.js"></script>
+	</body>
+</html>
