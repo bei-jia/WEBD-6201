@@ -1,21 +1,25 @@
 .title{
     font-size: 2em;
 	font-weight: bold;
+    text-align: left;
 }
-
-.login-form {
+.pContent{
+    text-align:left;
+}
+#login-form {
     width  : 600px;
-    height : 600px;
+    height : 420px;
     align-items: center;
     text-align: center;
     border: 1px solid #ccc;
     background-color: #ccc;
     margin: 0 auto;
+    padding: 10px;
 }
 
 #inputFirstName,#inputLastName,#inputEmail,#inputPassword,#inputPassword2,
 #log-username,#log-pass {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 
 }
 
@@ -28,4 +32,8 @@
     background-color: #ccc;
     margin: 0 auto;
 
+  }
+  #i-log,#log-username{
+    display: inline-block;
+    vertical-align: middle;
   }
